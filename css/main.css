@@ -1,0 +1,162 @@
+body{
+    background-color: #c8e9f0;
+    margin: 0;
+    padding: 0;
+}
+.navbar{
+    background-color: white;
+}
+.navbar-menu{
+}
+.navbar-item{
+    display: inline-block;
+    padding: 24px 10px;
+}
+.navbar-item a{
+    text-decoration: none;
+    color: grey;
+}
+.flex-box{
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+}
+.flex-item{
+    /*border: 1px solid red;*/
+    padding: 10px 15px;
+}
+.flex-item p{
+    background-color: white;
+    padding: 16px;
+}
+.navbar-item:hover a{
+    color: #34c9cb;
+}
+.navbar-item:hover{
+    background-color: #f1f1f1;
+}
+
+.navbar-item:after{
+    content: '';
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    background-image: url("../rasmlar/down-arrow.svg");
+    background-repeat: no-repeat;
+    background-size: 60%;
+    background-position: center center;
+    vertical-align: middle;
+    margin-left: 3px;
+}
+
+.navbar-item{
+    position: relative;
+}
+
+.drop-menu{
+    position: absolute;
+    left: 0;
+    top: 100%;
+    margin: 0;
+    padding: 0;
+    width: 120px;
+    background-color: #f1f1f1;
+    display: none;
+}
+
+.navbar-item:hover .drop-menu{
+    display: block;
+}
+
+.wrap{
+    width: 1200px;
+    margin: 10px auto;
+    background-color: white;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+.btn{
+    display: inline-block;
+    padding: 15px 25px;
+    text-decoration: none;
+    color: white;
+    background-color: #34c9cb;
+    border-bottom: 8px solid #248f91;
+    border-radius: 8px;
+    transition: all 5s ease;
+}
+
+.btn:active{
+    margin-top: 4px;
+    border-bottom-width: 4px;
+}
+
+.btn:focus{
+    margin-top: 4px;
+    border-bottom-width: 4px;
+}
+
+.btn:hover{
+    border-radius: 20px;
+    padding-left: 100px;
+    padding-right: 100px;
+    margin-left: 200px;
+
+}
+
+.sticky{
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+.fixed{
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    text-align: center;
+    background-color: white;
+    border-radius: 8px;
+    border: 2px solid #248f91;
+    position: fixed;
+    right: 40px;
+    bottom: 80px;
+    line-height: 45px;
+    background-image: url("../rasmlar/down-arrow.svg");
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    transform: rotate(180deg);
+}
+
+.flex-item{
+    position: relative;
+    /*border: 1px solid red;*/
+}
+
+
+.badge{
+    background-color: #248f91;
+    color: white;
+    width: 25px;
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
+    padding: 0 5px;
+    position: absolute;
+    top: 26px;
+    right: 15px;
+}
+.badge1{
+    background-color: grey;
+    color: white;
+    width: 25px;
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
+    padding: 0 5px;
+    position: absolute;
+    top: 26px;
+    left: 15px;
+}
+
